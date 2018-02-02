@@ -1,0 +1,173 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    
+    background-color: ;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    /*
+    display: flex;
+    align-items: center;
+    flex-direction: row;*/
+    
+}
+
+nav a {
+    color: white;
+    opacity: 0.8;
+    line-height: 16px;
+    font-size: 16px;
+    padding: 32px 20px;
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    transition: all 0.2s linear;
+    
+}
+
+nav a:hover {
+    background-color: rgba(155, 155, 155, 0.3);
+    border-bottom: 1px solid crimson;
+    opacity: 1;
+}
+
+#logo {
+    color: white;
+    float: left;
+    height: 100%;
+    width: auto;
+    line-height: 80px;
+    font-size: 30px;
+}
+
+header {
+    width: 100%;
+    /*height: calc(100% - 81px);*/
+    height: 100%;
+    
+}
+/*
+#margin {
+    width: 100%;
+    height: 81px;
+}
+*/
+h1 {
+    color: white;
+    font-size: 100px;
+
+}
+
+h2 {
+    color: white;
+
+}
+
+h3 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    
+    
+}
+
+#slider:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    background-image: url(img/StockSnap_KGSTJH2CB7.jpg), linear-gradient(45deg, crimson, cadetblue 60%), radial-gradient(transparent, black 200%);
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    
+    filter: blur(5px) brightness(50%);
+    transform: scale(1.05);
+    
+}
+
+#headings {
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+
+.first-offer {
+    width: calc((100% / 3) - 10px);
+    height: 500px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.first-offer img {
+    
+    margin: 0 auto;
+    
+    background-color: rgba(50, 50, 50, 0.3);
+    border-radius: 10px;
+}
+
+#offers {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main, footer {
+    width: 100%;
+    height: 100%;
+}
+
+.ribbon {
+    z-index: 1;
+    font-weight: bold;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    transform: rotate(40deg);
+    letter-spacing: 1px;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.dodgerblue {
+    background-color: dodgerblue;
+}
+
+.orange {
+    background-color: orange;
+}
+
