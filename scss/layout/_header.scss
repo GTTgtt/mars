@@ -1,0 +1,83 @@
+header {
+    margin-top: 81px;
+    height: calc(100% - 81px);
+    
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+}
+
+#offers {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    .offer {
+        width: calc((100% / 3) - 50px);
+        height: auto;
+        background-color: rgba(white, 0.6);
+        @include border-radius;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        
+        .img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            background-color: rgba(20, 20, 20, 1);
+        }
+        
+        button {
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            @include border-radius;
+            
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            
+            filter: contrast(80%) grayscale(20%);
+        }
+        
+        button:hover {
+            filter: none;
+        }
+        
+    }
+}
+
+.ribbon {
+    height: 30px;
+    width: 300px;
+    text-transform: capitalize;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: absolute;
+    transform: rotate(40deg);
+    right: -80px;
+    top: 30px;
+    border: 2px solid white;
+    z-index: 2;
+    
+    @include transition(all 0.2s linear);
+}
+
+.ribbon:hover {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.h3 {
+    height: 100px;
+}

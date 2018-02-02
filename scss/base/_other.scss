@@ -1,0 +1,29 @@
+.color1 {
+    color: $color1;
+}
+
+.color2 {
+    color: $color2;
+}
+
+.color3 {
+    color: $color3;
+}
+
+.bg-color1, button.bg-color1b:before {
+    background-color: $color1;
+}
+
+.bg-color2, button.bg-color2b:before {
+    background-color: $color2;
+}
+
+.bg-color3, button.bg-color3b:before {
+    background-color: $color3;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}

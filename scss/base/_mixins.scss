@@ -1,0 +1,14 @@
+// @include border-radius(number);
+// @include border-radius; --> :default-value
+@mixin border-radius($radius:10px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($trans){
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
